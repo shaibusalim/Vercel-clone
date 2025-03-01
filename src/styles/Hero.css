@@ -1,0 +1,522 @@
+.hero-container{
+   
+    width: 100%;
+    
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(5, 4, 4);
+}
+.hero-container .hero-content{
+ 
+   margin: 40px;
+    width: 1100px;
+    height: 100vh;   
+}
+
+
+  /* First Section styles  */
+
+  .hero-container .hero-content .first-section {
+    display: grid;
+    grid-template-columns: repeat(12,  1fr);
+    grid-template-rows: repeat(8,   1fr);
+    max-width: 95%; /* Adjust as needed */
+    height: 810px; /* Adjust as needed */
+    margin: 0 auto;
+    
+    
+  }
+  
+  .hero-container .hero-content .first-section .grid-item {
+    border: 1px solid rgba(84, 83, 83, 0.609);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     width: 100%;
+     height: 102px; 
+     
+  }
+
+   .hero-container .hero-content .first-section .first-section-content{
+   
+    position: absolute;
+    width: 64.5%;
+    height: 408px;
+    top: 39.8%;
+    left: 17.8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:  white;
+    background: rgb(5, 4, 4); /* Light transparent background */
+    backdrop-filter: blur(20px); /* Apply blur */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    /* Optional: Soft box shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding-top: 50px;
+   }
+   .hero-container .hero-content .first-section .first-section-content h1{
+    font-size: 3rem;
+   }
+   .hero-container .hero-content .first-section .first-section-content p{
+    font-size: 1.4rem;
+   }
+   .hero-container .hero-content .first-section .first-section-content .first-section-buttons{
+    display: flex;
+    margin-top: 20px;
+    gap: 30px;
+   }
+   .hero-container .hero-content .first-section .first-section-content .first-section-buttons .button1{
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    width: 180px;
+    height: 50px;
+    border-radius: 30px;
+   }
+   .hero-container .hero-content .first-section .first-section-content .first-section-buttons .button1:hover{
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+   }
+   .hero-container .hero-content .first-section .first-section-content .first-section-buttons .button2{
+    background-color: rgba(0, 0, 0, 0.935);
+    height: 53px;
+    width: 188px;
+    border-radius: 30px;
+    font-size: 18px;
+    border: 1px solid rgba(84, 83, 83, 0.367)
+   }
+   .hero-container .hero-content .first-section .first-section-content .first-section-buttons .button2:hover{
+    background-color: #007bff;
+   }
+   
+   .hero-container .hero-content .first-section .logo{
+    
+    width: 200px;
+    height: 200px;
+    z-index: 10000;
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    
+   }
+
+
+   /* Second section styles */
+
+   .second-section{
+    border: 1px solid #555;
+    height: 350px;
+    width: 95%;
+    margin-top: 5px;
+    margin-left: 27px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .second-section div p{
+    font-size: 2.5rem;
+   }
+
+      /* Third section styles */
+
+     .third-section{
+        border: 1px solid #555;
+        height: 600px;
+        width: 95%;
+        margin-left: 27px;
+        border-top: none;
+        color: white;
+        display: flex;
+        
+      }
+      .hero-container .hero-content .third-section .third-section-content{
+        border: 1px solid #555;
+        width: 600px;
+        height: 584px;
+        margin-top: 17px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-bottom: none;
+      }
+      .hero-container .hero-content .third-section .third-section-content .box1{
+        width: 350px;
+        height: 200px;
+        border: 1px solid #555;
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       padding-left: 10px;
+       margin-left: 40px;
+       border-radius: 10px;
+      }
+      .hero-container .hero-content .third-section .third-section-content .box1 p{
+        letter-spacing: 1px;
+        line-height: 1rem;
+        font-size: 0.75rem;
+        margin: 4px;
+        font-weight: 400;
+        color: #ffffff;
+        
+      }
+      .hero-container .hero-content .third-section .third-section-content h2{
+       font-size: 0.875rem;
+       font-weight: 400;
+       color: #b6acac;
+      }
+      .hero-container .hero-content .third-section .third-section-content .stack{
+        font-size: 1.4rem;
+      }
+      .hero-container .hero-content .third-section .third-section-content .stack p{
+        margin: 5px;
+      }
+      .hero-container .hero-content .third-section .third-section-content .box2{
+        width: 350px;
+        height: 200px;
+        border: 1px solid #555;
+        display: flex;
+       flex-direction: column;
+       padding-left: 10px;
+       margin-left: 40px;
+       border-radius: 10px;
+       z-index: 100;
+       position: relative;
+       bottom: 32px;
+       left: 80px;
+       background-color: rgb(5, 4, 4);
+      }
+      .hero-container .hero-content .third-section .third-section-content .box2 .box2-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+        height: 40px;
+      }
+      .hero-container .hero-content .third-section .third-section-content .box2 .box2-content{
+        border: 1px solid #555;
+        height: 120px;
+        width: 315px;
+        border-bottom: none;
+        display: flex;
+        justify-content: center;
+        font-size: 2.1rem;
+        padding: 10px;
+        color: rgba(137, 137, 137, 0.73);
+      }
+      .hero-container .hero-content .third-section .third-section-content .box3{
+        width: 500px;
+        height: 460px;
+      }
+      .hero-container .hero-content .third-section .third-section-content .box3 .chat1{
+        border:1px solid #555;
+        width: 250px;
+        height: 70px;
+        padding: 10px;
+        margin: 40px;
+        border-radius: 10px;
+      }
+      .hero-container .hero-content .third-section .third-section-content .box3 .chat2{
+        
+        width: 370px;
+        height: 90px;
+        margin-left: 110px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+      }
+      .hero-container .hero-content .third-section .third-section-content .box3 .chat2 .txt{
+        border:1px solid #555;
+        width: 200px;
+        height: 50px;
+        padding: 12px;
+        border-radius: 10px;
+        font-size: 1rem;
+      }
+      .hero-container .hero-content .third-section .third-section-content .box3 .chat2 .icon{
+        display: flex;
+        align-items: center;
+        width: 120px;
+        height: 60px;
+      }
+      .hero-container .hero-content .third-section .third-section-content .box3 .chat2 .icon p{
+        border:1px solid #555;
+        border-radius: 8px;
+        border-style: hidden;
+        text-align: center;
+        width: 69px;
+        height: 28px;
+        background-color: #007bff;
+        color: black;
+      }
+      .hero-container .hero-content .third-section .third-section-content .box3 .chat2 .icon .arrow{
+        position: relative;
+        bottom: 20px;
+        font-size: 1.5rem;
+      }
+
+      .hero-container .hero-content .third-section .third-section-content .box3 .chat3{
+        width: 420px;
+        height: 90px;
+        margin-left: 10px;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        padding: 10px;
+        
+      }
+      .hero-container .hero-content .third-section .third-section-content .box3 .chat3 .txt{
+        border:1px solid #555;
+        width: 270px;
+        height: 65px;
+        border-radius: 10px;
+        padding: 8px;
+        font-size: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .hero-container .hero-content .third-section .third-section-content .box3 .chat3 .icon{
+        display: flex;
+        align-items: center;
+        width: 140px;
+        height: 60px;
+        
+        margin-top: 35px;
+      }
+      .hero-container .hero-content .third-section .third-section-content .box3 .chat3 .icon .arrow{
+        position: relative;
+        bottom: 20px;
+        font-size: 1.4rem;
+        transform: rotate(270deg);
+      }
+      .hero-container .hero-content .third-section .third-section-content .box3 .chat3 .icon p{
+        border:1px solid #555;
+        border-radius: 8px;
+        border-style: hidden;
+        text-align: center;
+        width: 60px;
+        height: 24px;
+        background-color: #ee2929;
+        color: black;
+        font-size: 14px;
+      }
+
+      .hero-container .hero-content .third-section .third-section-content .box3 .chat4{
+        
+        width: 270px;
+        height: 70px;
+        margin-left: 210px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .hero-container .hero-content .third-section .third-section-content .box3 .chat4 div{
+        border:1px solid #555;
+        width: 180px;
+        height: 50px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+      }
+      .hero-container .hero-content .third-section .third-section-content .box3 .chat4 .arrow{
+        position: relative;
+        top: 10px;
+        left: 20px;
+        font-size: 1.4rem;
+        transform: rotate(270deg);
+      }
+
+
+      /* Forth Section Styles  */
+
+      .forth-section{
+        border: 1px solid #555;
+        height: 400px;
+        width: 95%;
+        margin-left: 27px;
+        border-top: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+      }
+      .forth-section p{
+        letter-spacing: 1px;
+        line-height: 1rem;
+        font-size: 1.3rem;
+        margin: 4px;
+        font-weight: 400;
+        color: #ffffff;
+        
+      }
+      .forth-section h2{
+       font-size: 0.875rem;
+       font-weight: 400;
+       color: #b6acac;
+      }
+
+        /* Fifth Section Styles  */
+
+      .fifth-section{
+        border: 1px solid #555;
+        height: 500px;
+        width: 95%;
+        margin-left: 27px;
+        border-top: none;
+        color: white;
+        display: flex;
+        
+      }
+      .fifth-section .f-card{
+        border: 1px solid #555;
+        width: 600px;
+        height: 500px;
+        border-top: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-bottom: none;
+      }
+    
+      .fifth-section .box2 p{
+        font-size: 1.4rem;
+        color: #b6acac ;
+      }
+      .fifth-section .box2 .card{
+       
+        height: 360px;
+        border-bottom: none;
+        border-radius: 20px;
+        margin-top: 40px;
+        display: flex;
+      }
+      .fifth-section .box2 .card .sp{
+        border: 1px solid #555;
+        width: 250px;
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+      }
+      .fifth-section .box2 .card .sp h3{
+        font-size: 1.2rem;
+      }
+      .fifth-section .box2 .card .sp div{
+        
+        height: 70px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+        border-radius: 8px;
+        background-color: #1c1b1b92;
+      }
+      .fifth-section .box2 .card .sp div span{
+        font-size: 0.7remrem;
+      }
+
+      /* Sixth Section styles  */
+      .sixth-section{
+        border: 1px solid #555;
+        height: 200px;
+        width: 95%;
+        margin-left: 27px;
+        border-top: none;
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      .sixth-section .sixth-section-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+      }
+      .sixth-section .sixth-section-content div{
+        border:1px solid #555;
+        font-size: 1rem;
+        width: 120px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+      }
+
+      /* Last Section Styles  */
+
+      .last-section{
+        border: 1px solid #555;
+        height: 300px;
+        width: 95%;
+        margin-left: 27px;
+        border-top: none;
+        color: white;
+        display: flex;
+        
+      }
+      .last-section .last-section-content{
+        width: 100%;
+        margin-top: 20px;
+        border-top: 1px solid #555;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .last-section .last-section-content .box1{
+        margin-left: 50px;
+        font-size: 1.3rem;
+        border:1px solid #555;
+        height: 200px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .last-section .last-section-content .box1 .buttons{
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .last-section .last-section-content .box1 .buttons .button1{
+          background-color: white;
+          font-size: 14px;
+          color: rgb(44, 43, 43);
+          width: 140px;
+          height: 47px;
+          border-radius: 50px;
+          cursor: pointer;
+      }
+      .last-section .last-section-content .box1 .buttons .button1:hover{
+        background-color: #ffffffed;
+        color: black;
+      }
+      .last-section .last-section-content .box1 .buttons .button2{
+        border:1px solid #555;
+        background-color: rgb(5, 4, 4);
+        width: 140px;
+        height: 47px;
+        font-size: 14px;
+        border-radius: 50px;
+        cursor: pointer;
+       
+      }
+      .last-section .last-section-content .box1 .buttons .button2:hover{
+        background-color: #2f2f2fd7;
+
+      }

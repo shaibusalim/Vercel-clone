@@ -1,0 +1,78 @@
+.header-container{
+    border-bottom: 1px solid rgba(220, 220, 220, 0.306);
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10000000;
+    background-color: rgb(5, 4, 4);
+}
+.header-container .header-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 55px 8px 55px;
+    height: 70px;
+}
+.header-container .header-content .header-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-container .header-content .header-menu .header-title{
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    
+}
+.header-container .header-content .header-menu .header-title span{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.header-container .header-content .header-menu .header-menu-list ul{
+    display: flex;
+}
+.header-container .header-content .header-menu .header-menu-list ul li{
+    list-style-type: none;
+    margin: 0px 0px 0px 20px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.584);
+    cursor: pointer;
+    padding: 5px;
+}
+.header-container .header-content .header-menu .header-menu-list ul li:hover{
+        background-color: #464646;
+        border-radius: 10px;
+        color: white;
+       
+}
+
+/* Header buttons styles */
+
+.header-container .header-content .header-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+.header-container .header-content .header-buttons button{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #464646;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.header-container .header-content .header-buttons button:hover{
+    background-color: rgba(66, 64, 64, 0.8);
+}
+.header-container .header-content .header-buttons button:last-of-type{
+    background-color: white;
+    color: rgb(36, 35, 35);
+    cursor: pointer;
+}
+.header-container .header-content .header-buttons button:last-of-type:hover{
+    background-color: rgb(242, 242, 250);
+    font-weight: 400;
+    color: black;
+}
