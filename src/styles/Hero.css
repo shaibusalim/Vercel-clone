@@ -1,4 +1,24 @@
+/* Primary Gradient */
+.primary-gradient {
+  background: linear-gradient(135deg, #007CF0, #00DFD8);
+}
 
+/* Secondary Gradient */
+.secondary-gradient {
+  background: linear-gradient(135deg, #7928CA, #FF0080);
+}
+
+/* Background Gradient */
+.background-gradient {
+  background: linear-gradient(135deg, #1A1A1A, #0D0D0D);
+}
+.gredient{
+  width: 100%;
+  height: 200px;
+ 
+  position: absolute;
+  top: 400px;
+}
 .main{
   width: 100%;
   height: 100vh;
@@ -8,12 +28,12 @@
 .hero-container{
    
     width: 100%;
-    
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     background-color: rgb(5, 4, 4);
 }
 .hero-container .hero-content{
@@ -34,7 +54,26 @@
     height: 810px; /* Adjust as needed */
     margin: 0 auto;
     
-    
+  }
+  .first-section::before {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute;
+    top: 444px;
+    left: 150px;
+    width: 77.6%;
+    height: 84%;
+    background: linear-gradient(
+      135deg,
+      rgba(0, 124, 240, 0.8),  /* Semi-transparent blue */
+      rgba(0, 223, 216, 0.8),  /* Semi-transparent cyan */
+      rgba(121, 40, 202, 0.8), /* Semi-transparent purple */
+      rgba(255, 0, 128, 0.8),  /* Semi-transparent magenta */
+      rgba(103, 2, 52, 0.8)    /* Semi-transparent deep magenta */
+    );
+     /* Place the gradient behind the content */
+    opacity: 0.8; /* Adjust opacity if needed */
+  
+
   }
   
   .hero-container .hero-content .first-section .grid-item {
@@ -42,6 +81,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
      width: 100%;
      height: 102px; 
      
@@ -58,11 +98,12 @@
     flex-direction: column;
     align-items: center;
     color:  white;
-    background: rgb(5, 4, 4); /* Light transparent background */
-    backdrop-filter: blur(20px); /* Apply blur */
+    background-color: rgba(7, 7, 7, 0);
+    /* Light transparent background */
+    backdrop-filter: blur(10px); /* Apply blur */
     -webkit-backdrop-filter: blur(10px); /* For Safari support */
     /* Optional: Soft box shadow */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   
     padding-top: 50px;
    }
    .hero-container .hero-content .first-section .first-section-content h1{

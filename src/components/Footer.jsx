@@ -2,7 +2,7 @@ import { FaExternalLinkAlt, FaGithub, FaLinkedin, FaTwitter, FaYoutube, FaChevro
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-10">
+    <footer className="bg-[rgb(5,4,4)] text-white py-10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Products Section */}

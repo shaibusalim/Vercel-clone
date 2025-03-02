@@ -31,6 +31,7 @@ function Hero() {
                <div className='logo'>
                     <VercelLogo/>
                </div>
+              
             </section>
             <section className='second-section'>
                   <div>
