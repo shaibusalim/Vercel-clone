@@ -2,8 +2,9 @@ import React from 'react'
 import "../styles/Hero.css"
 import Header from './Header'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationArrow, faCircleArrowUp, faSortUp, faRotateLeft } from "@fortawesome/free-solid-svg-icons";
+import { faLocationArrow, faCircleArrowUp, faSortUp, faRotateLeft, faGlobe, faComment } from "@fortawesome/free-solid-svg-icons";
 import VercelLogo from './VercelLogo';
+import Footer from './Footer';
 
 
 
@@ -34,7 +35,7 @@ function Hero() {
             <section className='second-section'>
                   <div>
                         <p>Develop with your favorite tools &nbsp;{'>_'}<br/>
-                        Launch globally, instantly Keeping pushing</p>
+                        Launch globally, instantly&nbsp; <FontAwesomeIcon icon={faGlobe} style={{fontSize: '2rem'}} /> &nbsp;Keeping pushing</p>
                   </div>
             </section>
             <section className='third-section'>
@@ -76,7 +77,7 @@ function Hero() {
                   </div>
                 </div>
                 <div className='third-section-content' >
-                <h2>{'>_'} Collaborative pre-production</h2>
+                <h2><FontAwesomeIcon icon={faComment}  /> &nbsp;Collaborative pre-production</h2>
                   <div className='stack'>
                   <strong>Every deploy is remarkable.</strong><p>Chat with your team on real, porduction-grade UI, not just designs.</p>
                   </div>
@@ -179,10 +180,15 @@ function Hero() {
                   </div>
                 </div>
             </section>
+       
         </div>
+       
 
     </div>
-
+          
+        <div className='footer'>
+        <Footer/>
+        </div>
   
     </div>
    
